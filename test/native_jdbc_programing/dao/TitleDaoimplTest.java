@@ -42,7 +42,7 @@ public class TitleDaoimplTest {
 
 	@Test
 	public void test01InsertTitle() {
-		System.out.printf("%sin()%n", "testInsertTitle");
+		System.out.printf("%s()%n", "testInsertTitle");
 		Title newTitle = new Title(6, "인턴");
 		int res = dao.insertTitle(newTitle);
 		Assert.assertEquals(1, res);
@@ -57,7 +57,6 @@ public class TitleDaoimplTest {
 			System.out.println(dao.selectTitleByNo(newTitle));
 		}
 	
-
 	@Test
 	public void test03DeleteTitle() {
 		System.out.printf("%s()%n", "testDeleteTitle");

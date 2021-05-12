@@ -9,7 +9,7 @@ public class Employee {
 	private Department dept;
 
 	public Employee(int empNo) {
-		// TODO Auto-generated constructor stub
+		this.empNo = empNo;
 	}
 
 	public Employee(int empNo, String empName, Title title, Employee manager, int salary, Department dept) {
@@ -21,58 +21,58 @@ public class Employee {
 		this.dept = dept;
 	}
 
-	public final int getEmpNo() {
+	public int getEmpNo() {
 		return empNo;
 	}
 
-	public final void setEmpNo(int empNo) {
+	public void setEmpNo(int empNo) {
 		this.empNo = empNo;
 	}
 
-	public final String getEmpName() {
+	public String getEmpName() {
 		return empName;
 	}
 
-	public final void setEmpName(String empName) {
+	public void setEmpName(String empName) {
 		this.empName = empName;
 	}
 
-	public final Title getTitle() {
+	public Title getTitle() {
 		return title;
 	}
 
-	public final void setTitle(Title title) {
+	public void setTitle(Title title) {
 		this.title = title;
 	}
 
-	public final Employee getManager() {
+	public Employee getManager() {
 		return manager;
 	}
 
-	public final void setManager(Employee manager) {
+	public void setManager(Employee manager) {
 		this.manager = manager;
 	}
 
-	public final int getSalary() {
+	public int getSalary() {
 		return salary;
 	}
 
-	public final void setSalary(int salary) {
+	public void setSalary(int salary) {
 		this.salary = salary;
 	}
 
-	public final Department getDept() {
+	public Department getDept() {
 		return dept;
 	}
 
-	public final void setDept(Department dept) {
+	public void setDept(Department dept) {
 		this.dept = dept;
 	}
 
 	@Override
 	public String toString() {
-		return String.format("Employee [empNo=%s, empName=%s, title=%s, manager=%s, salary=%s, dept=%s]", empNo,
-				empName, title, manager, salary, dept);
+		return String.format("%s %s %s %s %s %s", empNo, empName, title.gettNo(),
+				manager.getEmpNo() == 0 ? "null" : manager.getEmpNo(), salary, dept.getDeptno());
 	}
 
 }

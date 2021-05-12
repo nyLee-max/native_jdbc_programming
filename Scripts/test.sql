@@ -57,7 +57,7 @@ update employee
 delete
 	from employee 
 	where empno = 1004;
-	
+	select * from title;
 select * from employee;
 drop table department;
 drop table title;
@@ -65,3 +65,11 @@ drop table employee;
 select * from department;
 
 desc employee;
+
+select * from title;
+select * from department;
+
+delete from title where tno = 6;
+delete from department where deptno = 5;
+
+select empno, empname, title as title_no, manager as manager_no, salary, dept as deptNo from employee where empno = 2106;

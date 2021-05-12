@@ -38,7 +38,7 @@ public class JdbcConEx2 {
 			System.out.println("pstmt >" + pstmt);
 			
 			Department newDept = new Department(7, "회계", 11);
-			pstmt.setInt(1, newDept.getDeptNo());
+			pstmt.setInt(1, newDept.getDeptno());
 			pstmt.setString(2, newDept.getDeptName());
 			pstmt.setInt(3, newDept.getFloor());
 			System.out.println("pstmt2 >" + pstmt);
